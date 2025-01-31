@@ -10,7 +10,7 @@ echo "Installing system updates and required packages..."
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-# Install Blender via snap, the desktop environment, NICE DCV, and Xorg.
+# Install Blender via snap, the desktop environment, NICE DCV for the stream, and Xorg.
 sudo snap install blender --classic
 sudo apt-get install -y ubuntu-desktop nice-dcv-server xorg
 
