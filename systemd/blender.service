@@ -1,0 +1,15 @@
+[Unit]
+Description=Blender 3D Service
+After=network.target graphical.target
+Wants=graphical.target
+
+[Service]
+User=blender-user
+Environment=DISPLAY=:0
+WorkingDirectory=/home/blender-user
+ExecStart=/snap/bin/blender
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
